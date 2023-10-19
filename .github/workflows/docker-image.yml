@@ -28,7 +28,9 @@ jobs:
     - name: Build Docker Image
       run:  |
         docker build -t david0ql/graphql-actions:0.0.1 .
+        docker build -t david0ql/graphql-actions:latest .
 
     - name: Push Docker Image
       run:  |
         docker push david0ql/graphql-actions:0.0.1
+        docker push david0ql/graphql-actions:latest
